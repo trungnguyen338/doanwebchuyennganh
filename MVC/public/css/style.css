@@ -1,0 +1,144 @@
+/* === Reset cơ bản === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* === Toàn trang === */
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 40px;
+}
+
+/* === Tiêu đề === */
+h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* === Nút thêm sinh viên === */
+a[href*="create"] {
+  display: inline-block;
+  background: yellow;
+  color: orange;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+a[href*="create"]:hover {
+  background: #1f38c0;
+}
+
+/* === Bảng danh sách sinh viên === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: black;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: 0.2s;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background-color: blue;
+}
+th {
+  background: gray;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+body {
+  background-color: cadetblue;
+}
+
+td {
+  padding: 10px;
+  background-color: violet;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover td {
+  background-color: #f1f5ff;
+}
+
+/* === Link hành động === */
+td a {
+  color: #2b4eff;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* === Ô tìm kiếm === */
+#searchBox {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+#searchBox:focus {
+  border-color: #2b4eff;
+  box-shadow: 0 0 5px rgba(43, 78, 255, 0.3);
+}
+
+/* === Hộp gợi ý tìm kiếm === */
+#suggestBox {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Mục gợi ý */
+#suggestBox ul {
+  list-style: none;
+}
+
+#suggestBox li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+#suggestBox li:hover {
+  background-color: #f0f4ff;
+}
+
+/* Khi không tìm thấy */
+#suggestBox p {
+  padding: 8px 12px;
+  color: #666;
+}
