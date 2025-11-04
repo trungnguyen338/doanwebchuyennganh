@@ -23,15 +23,15 @@ class Database
         return $this->conn;
     }
 }
-// class concac
+// class con
 // {
-//     public $concaca;
+//     public $con;
 //     private $host = "localhost";
 //     private $dbname = "student_db";
 //     private $username = "root";
 //     private $password = "";
 //     public function conntected(){
-//         $this->concaca = null;
+//         $this->con = null;
 //         try{
 //            $this->concaca = new PDO("mysql:host={$this->host},dbname={$this->dbname},$this->username,$this->password");
 //            $this->concaca->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -41,6 +41,6 @@ class Database
 //          catch(PDOException $e){
 //             echo $e->getMessage();
 //         }
-//         return $this->concaca;
+//         return $this->con;
 //     }
 // }
